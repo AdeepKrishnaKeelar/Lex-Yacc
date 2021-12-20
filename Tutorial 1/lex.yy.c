@@ -360,9 +360,10 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[11] =
+static const flex_int16_t yy_accept[13] =
     {   0,
-        0,    0,    4,    2,    3,    2,    0,    0,    1,    0
+        0,    0,    4,    2,    3,    2,    2,    0,    0,    0,
+        1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -371,7 +372,7 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    1,    1,    4,    5,    5,
+        1,    1,    1,    1,    1,    3,    1,    4,    5,    5,
         5,    5,    5,    5,    5,    5,    5,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -402,28 +403,28 @@ static const YY_CHAR yy_meta[6] =
         1,    1,    1,    1,    2
     } ;
 
-static const flex_int16_t yy_base[13] =
+static const flex_int16_t yy_base[16] =
     {   0,
-        9,    0,   10,   12,   12,    0,    0,    7,   12,   12,
-        5,    6
+       11,    0,   12,   14,   14,    0,    8,    0,    0,    8,
+       14,   14,    5,    7,    6
     } ;
 
-static const flex_int16_t yy_def[13] =
+static const flex_int16_t yy_def[16] =
     {   0,
-       11,   11,   10,   10,   10,   10,   12,   12,   10,    0,
-       10,   10
+       13,   12,   12,   12,   12,   14,   14,    7,   15,   15,
+       12,    0,   12,   12,   12
     } ;
 
-static const flex_int16_t yy_nxt[18] =
+static const flex_int16_t yy_nxt[20] =
     {   0,
-       10,    5,    6,    7,    8,    4,    4,    8,    9,   10,
-        5,    3,   10,   10,   10,   10,   10
+        4,    5,    4,    6,    7,    4,    4,   10,    8,   11,
+        9,   12,    5,    3,   12,   12,   12,   12,   12
     } ;
 
-static const flex_int16_t yy_chk[18] =
+static const flex_int16_t yy_chk[20] =
     {   0,
-        0,    2,    2,    6,    6,   11,   11,   12,    8,    3,
-        1,   10,   10,   10,   10,   10,   10
+        2,    2,    2,    2,    2,   13,   13,   15,   14,   10,
+        7,    3,    1,   12,   12,   12,   12,   12,   12
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -440,13 +441,12 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "program4.l"
-/*  Program - 4
-    Program to count the negative numbers 
- */
-#line 5 "program4.l"
+#line 1 "program5.l"
+/* Program - 5
+   Decimal number check, mandantory decimal part and optional whole part
+*/
+#line 5 "program5.l"
 	#include<stdio.h>
-	int count=0;
 #line 451 "lex.yy.c"
 #line 452 "lex.yy.c"
 
@@ -668,7 +668,7 @@ YY_DECL
 		}
 
 	{
-#line 8 "program4.l"
+#line 7 "program5.l"
 
 #line 674 "lex.yy.c"
 
@@ -698,13 +698,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 11 )
+				if ( yy_current_state >= 13 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 12 );
+		while ( yy_base[yy_current_state] != 14 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -733,17 +733,17 @@ case 1:
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 9 "program4.l"
-{ count+=1; printf("Valid negative number, count = %d\n",count); }
+#line 8 "program5.l"
+{ printf("This is a valid decimal number\n"); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "program4.l"
-{ printf("Invalid negative number\n"); }
+#line 9 "program5.l"
+{ printf("Invalid entry\n"); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 11 "program4.l"
+#line 10 "program5.l"
 ECHO;
 	YY_BREAK
 #line 750 "lex.yy.c"
@@ -1044,7 +1044,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 11 )
+			if ( yy_current_state >= 13 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1072,11 +1072,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 11 )
+		if ( yy_current_state >= 13 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 10);
+	yy_is_jam = (yy_current_state == 12);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1754,13 +1754,12 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 11 "program4.l"
+#line 10 "program5.l"
 
 int yywrap() {
 	return 1;
 }
 void main() {
 	yylex();
-	printf("Valid negative numbers : %d",count);
 }
 
