@@ -360,12 +360,9 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[40] =
+static const flex_int16_t yy_accept[11] =
     {   0,
-        0,    0,    4,    2,    3,    2,    0,    1,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0
+        0,    0,    4,    2,    3,    2,    0,    0,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -374,16 +371,16 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
-        1,    1,    1,    1,    4,    4,    4,    4,    4,    4,
-        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
-        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
-        1,    1,    1,    1,    4,    1,    4,    4,    4,    4,
+        1,    1,    1,    1,    3,    1,    1,    4,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 
-        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
-        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
-        4,    4,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -400,65 +397,33 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[5] =
+static const YY_CHAR yy_meta[6] =
     {   0,
-        1,    2,    3,    3
+        1,    1,    1,    1,    2
     } ;
 
-static const flex_int16_t yy_base[73] =
+static const flex_int16_t yy_base[13] =
     {   0,
-       98,    0,   99,  101,  101,    0,   96,  101,   95,   94,
-       93,   92,   91,   90,   89,   88,   87,   86,   85,   84,
-       83,   82,   81,   80,   79,   78,   77,   76,   75,   74,
-       73,   72,   71,   70,   69,   68,   67,    0,  101,    4,
-       65,    6,    8,   10,   12,   14,   16,   18,   20,   22,
-       24,   26,   28,   30,   32,   34,   36,   38,   40,   42,
-       44,   46,   48,   50,   52,   54,   56,   58,   60,   62,
-       64,    1
+        9,    0,   10,   12,   12,    0,    0,    7,   12,   12,
+        5,    6
     } ;
 
-static const flex_int16_t yy_def[73] =
+static const flex_int16_t yy_def[13] =
     {   0,
-       40,   40,   39,   39,   39,   41,   42,   39,   43,   44,
-       45,   46,   47,   48,   49,   50,   51,   52,   53,   54,
-       55,   56,   57,   58,   59,   60,   61,   62,   63,   64,
-       65,   66,   67,   68,   69,   70,   71,   72,    0,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39
+       11,   11,   10,   10,   10,   10,   12,   12,   10,    0,
+       10,   10
     } ;
 
-static const flex_int16_t yy_nxt[106] =
+static const flex_int16_t yy_nxt[18] =
     {   0,
-       39,    5,    8,    6,    4,    4,    4,    9,    9,   10,
-       10,   11,   11,   12,   12,   13,   13,   14,   14,   15,
-       15,   16,   16,   17,   17,   18,   18,   19,   19,   20,
-       20,   21,   21,   22,   22,   23,   23,   24,   24,   25,
-       25,   26,   26,   27,   27,   28,   28,   29,   29,   30,
-       30,   31,   31,   32,   32,   33,   33,   34,   34,   35,
-       35,   36,   36,   37,   37,   38,   38,    7,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,   39,    5,
-
-        3,   39,   39,   39,   39
+       10,    5,    6,    7,    8,    4,    4,    8,    9,   10,
+        5,    3,   10,   10,   10,   10,   10
     } ;
 
-static const flex_int16_t yy_chk[106] =
+static const flex_int16_t yy_chk[18] =
     {   0,
-        0,    2,   72,    2,   40,   40,   40,   42,   42,   43,
-       43,   44,   44,   45,   45,   46,   46,   47,   47,   48,
-       48,   49,   49,   50,   50,   51,   51,   52,   52,   53,
-       53,   54,   54,   55,   55,   56,   56,   57,   57,   58,
-       58,   59,   59,   60,   60,   61,   61,   62,   62,   63,
-       63,   64,   64,   65,   65,   66,   66,   67,   67,   68,
-       68,   69,   69,   70,   70,   71,   71,   41,   37,   36,
-       35,   34,   33,   32,   31,   30,   29,   28,   27,   26,
-       25,   24,   23,   22,   21,   20,   19,   18,   17,   16,
-       15,   14,   13,   12,   11,   10,    9,    7,    3,    1,
-
-       39,   39,   39,   39,   39
+        0,    2,    2,    6,    6,   11,   11,   12,    8,    3,
+        1,   10,   10,   10,   10,   10,   10
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -475,14 +440,15 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "program3.l"
-/* Program - 3
-Identify valid identifiers in C  
-*/
-#line 5 "program3.l"
+#line 1 "program4.l"
+/*  Program - 4
+    Program to count the negative numbers 
+ */
+#line 5 "program4.l"
 	#include<stdio.h>
-#line 485 "lex.yy.c"
-#line 486 "lex.yy.c"
+	int count=0;
+#line 451 "lex.yy.c"
+#line 452 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -702,9 +668,9 @@ YY_DECL
 		}
 
 	{
-#line 7 "program3.l"
+#line 8 "program4.l"
 
-#line 708 "lex.yy.c"
+#line 674 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -732,13 +698,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 40 )
+				if ( yy_current_state >= 11 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 101 );
+		while ( yy_base[yy_current_state] != 12 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -767,20 +733,20 @@ case 1:
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 8 "program3.l"
-{ printf("Valid identifier\n"); }
+#line 9 "program4.l"
+{ count+=1; printf("Valid negative number, count = %d\n",count); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "program3.l"
-{ printf("Invalid\n"); }
+#line 10 "program4.l"
+{ printf("Invalid negative number\n"); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 10 "program3.l"
+#line 11 "program4.l"
 ECHO;
 	YY_BREAK
-#line 784 "lex.yy.c"
+#line 750 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1078,7 +1044,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 40 )
+			if ( yy_current_state >= 11 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1106,11 +1072,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 40 )
+		if ( yy_current_state >= 11 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 39);
+	yy_is_jam = (yy_current_state == 10);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1788,12 +1754,13 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 10 "program3.l"
+#line 11 "program4.l"
 
 int yywrap() {
 	return 1;
 }
 void main() {
 	yylex();
+	printf("Valid negative numbers : %d",count);
 }
 
